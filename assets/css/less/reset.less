@@ -34,16 +34,30 @@
 @spacingLG: 4.5rem;
 //96px - Base * 4
 @spacingXL: 6rem;
+//120px - Base * 5
+@spacingXXL: 7.5rem;
 
-// Colors
-// Thanks Google.
-@gray1: #212121;
-@gray2: #424242;
-@gray3: #9E9E9E;
-@gray4: #E0E0E0;
+// Shades of Gray
+@gray94: rgba(0, 0, 0, .94);
+@gray83: rgba(0, 0, 0, .83);
+@gray72: rgba(0, 0, 0, .72);
+@gray61: rgba(0, 0, 0, .61);
+@gray50: rgba(0, 0, 0, .50);
+@gray39: rgba(0, 0, 0, .39);
+@gray28: rgba(0, 0, 0, .28);
+@gray17: rgba(0, 0, 0, .17);
+@gray6: rgba(0, 0, 0, .06);
+
+// Action Colors
 @action: #2196F3;
 @danger: #F44336;
 @warning: #FF9800;
+
+// Brand Colors
+@brandLight: #d06466;
+@brandBase: #B81418;
+@brandDark: #55090B;
+@brandAccent: #fBB03B;
 
 // ClearFix
 // Thanks Bootstrap
@@ -59,6 +73,8 @@
 }
 
 @fontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@fontColor:@gray83;
+@borderColor:@gray6;
 
 //==== Main Elements ====//
 
@@ -74,7 +90,7 @@ body {
   height: 100%;
   box-sizing: border-box;
   font-family: @fontFamily;
-  color: @gray1;
+  color: @fontColor;
   line-height: @spacingBase;
   font-size: @spacingSM;
   letter-spacing: 0.05em;
@@ -138,13 +154,13 @@ ol {
 }
 
 strong,
-.bold{
+.bold {
   font-weight: bolder;
 }
 
 // Misc Text
 small,
-.small{
+.small {
   font-size: smaller;
 }
 
@@ -155,7 +171,7 @@ blockquote {
   margin-bottom: 1.5rem;
   font-style: italic;
   font-weight: lighter;
-  color: @gray3;
+  color: @gray50;
 }
 
 hr {
@@ -163,7 +179,7 @@ hr {
   width: 88%;
   margin: @spacingSM auto;
   height: 1px;
-  background: @gray4;
+  background: @borderColor;
 }
 
 // Images
@@ -187,10 +203,11 @@ img {
 }
 
 .text-secondary {
-  color: @gray2;
+  color: @gray50;
 }
 
 .text-lead {
   font-size: 1.375rem;
   line-height: @spacingBase;
 }
+

@@ -1,0 +1,36 @@
+// Building Blocs
+// ==============
+
+
+.bloc{
+  position: relative;
+  z-index: 100;
+  display:block;
+  width:100%;
+  padding:@spacingBase 0;
+
+  &.sm{
+    padding: @spacingSM 0;
+  }
+
+  &.lg{
+    padding:@spacingLG 0;
+  }
+
+  &.xl{
+    padding:@spacingXL 0;
+  }
+
+  &.xxl{
+    padding:@spacingXXL 0;
+  }
+
+  &.brand{
+    background:@brandBase;
+    color:white;
+  }
+  &.accent{
+    background:@brandAccent;
+    color:@brandDark;
+  }
+}
