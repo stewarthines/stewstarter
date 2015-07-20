@@ -1,5 +1,9 @@
 # Stew's Starter
 
-- - -
+A starter pack for projects going forward. This pack uses LESS & Flexbox.
 
-Just making a starter file. 
+[x] Basic Elements
+[]  Responsive Flexbox Gird - 90%
+[]  Responsive NavBar
+[]  Responsive Sticky NavBar
+[]  Responsive Sticky Footer
