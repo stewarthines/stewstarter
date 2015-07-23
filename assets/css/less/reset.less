@@ -49,51 +49,51 @@
 @gray6: rgba(0, 0, 0, .06);
 
 // Action Colors
-@action: #2196F3;
-@danger: #F44336;
-@warning: #FF9800;
+@action: #2196f3;
+@danger: #f44336;
+@warning: #ff9800;
 
 // Brand Colors
 @brandLight: #d06466;
-@brandBase: #B81418;
-@brandDark: #55090B;
-@brandAccent: #fBB03B;
+@brandBase: #b81418;
+@brandDark: #55090b;
+@brandAccent: #fbb03b;
 
 // ClearFix
 // Thanks Bootstrap
 .clearfix() {
-  &:before,
-  &:after {
-    content: " "; // 1
-    display: table; // 2
-  }
-  &:after {
-    clear: both;
-  }
+    &:before,
+    &:after {
+        content: " "; // 1
+        display: table; // 2
+    }
+    &:after {
+        clear: both;
+    }
 }
 
 @fontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
-@fontColor:@gray83;
-@borderColor:@gray6;
+@fontColor: @gray83;
+@borderColor: @gray6;
 
 //==== Main Elements ====//
 
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: none;
+    margin:  0;
+    padding: 0;
+    border:  0;
+    outline: none;
 }
 
 html,
 body {
-  height: 100%;
-  box-sizing: border-box;
-  font-family: @fontFamily;
-  color: @fontColor;
-  line-height: @spacingBase;
-  font-size: @spacingSM;
-  letter-spacing: 0.05em;
+    height:         100%;
+    box-sizing:     border-box;
+    font-family:    @fontFamily;
+    color:          @fontColor;
+    line-height:    @spacingBase;
+    font-size:      @spacingSM;
+    letter-spacing: 0.05em;
 }
 
 //==== Typography ====//
@@ -101,26 +101,26 @@ body {
 // Headings
 h1,
 .h1 {
-  font-size: 2.75rem; //44px
-  line-height: @spacingMD; //48px
-  margin-top: @spacingMD;
-  margin-bottom: @spacingBase; //24px
+    font-size:     2.75rem; //44px
+    line-height:   @spacingMD; //48px
+    margin-top:    @spacingMD;
+    margin-bottom: @spacingBase; //24px
 }
 
 h2,
 .h2 {
-  font-size: 1.9375rem; //31px
-  line-height: @spacingMD;
-  margin-top: @spacingMD;
-  margin-bottom: @spacingBase;
+    font-size:     1.9375rem; //31px
+    line-height:   @spacingMD;
+    margin-top:    @spacingMD;
+    margin-bottom: @spacingBase;
 }
 
 h3,
 .h3 {
-  font-size: 1.375rem; //22px
-  line-height: @spacingBase;
-  margin-top: @spacingBase;
-  margin-bottom: @spacingBase;
+    font-size:     1.375rem; //22px
+    line-height:   @spacingBase;
+    margin-top:    @spacingBase;
+    margin-bottom: @spacingBase;
 }
 
 // Paragraphs
@@ -130,84 +130,84 @@ ol,
 pre,
 table,
 blockquote {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+    margin-top:    1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 // Links
 a {
-  text-decoration: none;
-  font-weight: bold;
-  color: @action;
-  &:hover {
-    color: darken(@action, 20);
-  }
-  &:visited {
-    color: darken(@action, 10);
-  }
+    text-decoration: none;
+    font-weight:     bold;
+    color:           @action;
+    &:hover {
+        color: darken(@action, 20);
+    }
+    &:visited {
+        color: darken(@action, 10);
+    }
 }
 
 // Lists
 ul,
 ol {
-  list-style: none;
+    list-style: none;
 }
 
 strong,
 .bold {
-  font-weight: bolder;
+    font-weight: bolder;
 }
 
 // Misc Text
 small,
 .small {
-  font-size: smaller;
+    font-size: smaller;
 }
 
 blockquote {
-  font-size: 1.375rem;
-  line-height: 1.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  font-style: italic;
-  font-weight: lighter;
-  color: @gray50;
+    font-size:     1.375rem;
+    line-height:   1.5rem;
+    margin-top:    1.5rem;
+    margin-bottom: 1.5rem;
+    font-style:    italic;
+    font-weight:   lighter;
+    color:         @gray50;
 }
 
 hr {
-  display: block;
-  width: 88%;
-  margin: @spacingSM auto;
-  height: 1px;
-  background: @borderColor;
+    display:    block;
+    width:      88%;
+    margin:     @spacingSM auto;
+    height:     1px;
+    background: @borderColor;
 }
 
 // Images
 
 img {
-  border: 0;
+    border: 0;
 }
 
 //==== Text Utility Classes ====//
 
 .text-center {
-  text-align: center;
+    text-align: center;
 }
 
 .text-left {
-  text-align: left;
+    text-align: left;
 }
 
 .text-right {
-  text-align: right;
+    text-align: right;
 }
 
 .text-secondary {
-  color: @gray50;
+    color: @gray50;
 }
 
 .text-lead {
-  font-size: 1.375rem;
-  line-height: @spacingBase;
+    font-size:   1.375rem;
+    line-height: @spacingBase;
 }
 

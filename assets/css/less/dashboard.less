@@ -1,0 +1,51 @@
+// Layout: Dashboard
+// =================
+
+@asideWidth:13.75rem;
+@offset:@spacingSM*2;
+
+
+
+.dashboard {
+background:@gray17;
+
+    aside {
+        position:   fixed;
+        left:       0;
+        top:        0;
+        bottom:     0;
+        display:block;
+        width:      @asideWidth;
+        padding:@spacingSM;
+        background: green;
+    }
+    .workspace{
+        position: relative;
+        left:@asideWidth+@offset;
+        top:0;
+        background:limegreen;
+    }
+
+    header {
+        position: fixed;
+        top:0;
+        right:0;
+        left:@asideWidth+@offset;
+        max-height:@spacingLG;
+        min-height:@spacingLG;
+        background: orange;
+        h1{
+            margin:0;
+        }
+    }
+    section {
+        margin-top:4.5rem;
+        padding: @spacingBase;
+        background: blue;
+
+        h2{
+            margin:0;
+            padding:0;
+        }
+    }
+}

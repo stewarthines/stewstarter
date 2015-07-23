@@ -8,80 +8,80 @@
 @containerMax: 1024px;
 @containerGutter: @spacingBase;
 
-@testPink: #F48EB1;
-@testBlue: #D7E8F0;
+@testPink: #f48eb1;
+@testBlue: #d7e8f0;
 
 //= = = = Containers = = = = //
 // Make something a Flex container
 .displayFlex() {
-  display: -webkit-flex;
-  display: flex;
+    display: -webkit-flex;
+    display: flex;
 }
 
 // Make your container into a Row
 .row() {
-  .displayFlex();
-  -webkit-flex-direction: row;
-  flex-direction: row;
+    .displayFlex();
+    -webkit-flex-direction: row;
+    flex-direction:         row;
 }
 
 // make the row wrap
 .rowWrap() {
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    flex-flow:         row wrap;
 }
 
 // Make your container into a column
 .column() {
-  .displayFlex();
-  -webkit-flex-direction: column;
-  flex-direction: column;
+    .displayFlex();
+    -webkit-flex-direction: column;
+    flex-direction:         column;
 }
 
 .spaceBetween() {
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
+    -webkit-align-items:     center;
+    align-items:             center;
+    -webkit-justify-content: space-between;
+    justify-content:         space-between;
 }
 
 .center() {
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
+    -webkit-align-items:     center;
+    align-items:             center;
+    -webkit-justify-content: center;
+    justify-content:         center;
 }
 
 // Create a container
 
 .flexContainer() {
-  .displayFlex();
-  .row();
-  .spaceBetween();
-  position: relative;
-  z-index: 100;
-  margin: 0 auto;
-  max-width: @containerMax;
+    .displayFlex();
+    .row();
+    .spaceBetween();
+    position:  relative;
+    z-index:   100;
+    margin:    0 auto;
+    max-width: @containerMax;
 }
 
 //= = = = Elements = = = = //
 
 // An element is a flex child grow | shrink | basis
 .flex(@grow:1, @shrink:0, @basis:auto) {
-  -webkit-flex: @grow @shrink @basis;
-  flex: @grow @shrink @basis;
+    -webkit-flex: @grow @shrink @basis;
+    flex:         @grow @shrink @basis;
 }
 
 // Set the order
 .order(@order) {
-  order: @order;
+    order: @order;
 }
 
 // Set the self alignment
 .alignSelf(@align:auto) {
-  -webkit-align-self: @align;
-  align-self: @align;
-  //auto | flex-start | flex-end | center | baseline | stretch
+    -webkit-align-self: @align;
+    align-self:         @align;
+    //auto | flex-start | flex-end | center | baseline | stretch
 }
 
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = //
@@ -92,133 +92,133 @@
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = //
 
 .container {
-  .flexContainer();
-  margin: 0 auto;
+    .flexContainer();
+    margin: 0 auto;
 
-  > .cell {
-    .flex();
-    margin-right: @containerGutter;
-    margin-bottom: @containerGutter;
-    &:last-child {
-      margin-right: 0;
+    &.full-width {
+        max-width: 100%;
+        width:     100%;
     }
-  }
 
-  //--------------------
-  // Default Sizes
-  //--------------------
-  &.fit {
     > .cell {
-      .flex(0, 0, 100%);
+        .flex();
+        margin-right:  @containerGutter;
+        margin-bottom: @containerGutter;
+        &:last-child {
+            margin-right: 0;
+        }
     }
-  }
-  //Half Grids
-  &.half {
-    > .cell {
-      .flex(1, 1, 50%);
-    }
-  }
-  // Thirds
-  &.thirds {
-    > .cell {
-      .flex(1, 1, 33.3333%);
-    }
-  }
-  &.quarters {
-    > .cell {
-      .flex(1, 1, 25%);
-    }
-  }
-  //Three Quarters
-  &.three-quarter.left {
-    > .cell:first-child {
-      .flex(1, 1, 75%);
-    }
-    > .cell:last-child {
-      .flex(1, 1, 25%);
-    }
-  }
-  &.three-quarter.right {
-    > .cell:first-child {
-      .flex(1, 1, 25%);
-    }
-    > .cell:last-child {
-      .flex(1, 1, 75%);
-    }
-  }
-  //--------------------
-  // Small to Medium
-  //--------------------
-  @media (min-width: 250px) and (max-width: 550px) {
-    width: 90%;
-    .rowWrap();
 
-    &.fit {
-      > .cell {
-        .flex(1, 1, 100%);
-        margin-right: 0;
-      }
-    }
+    //--------------------
+    // Default Sizes
+    //--------------------
 
     //Half Grids
     &.half {
-      > .cell {
-        .flex(1, 1, 100%);
-        margin-right: 0;
-      }
+        > .cell {
+            .flex(1, 1, 50%);
+        }
     }
-
     // Thirds
     &.thirds {
-      > .cell {
-        .flex(1, 1, 100%);
-        margin-right: 0;
-      }
+        > .cell {
+            .flex(1, 1, 33.3333%);
+        }
     }
-
     &.quarters {
-      > .cell {
-        .flex(1, 1, 100%);
-        margin-right: 0;
-      }
+        > .cell {
+            .flex(1, 1, 25%);
+        }
     }
-
     //Three Quarters
     &.three-quarter.left {
-      > .cell:first-child {
-        .flex(1, 1, 100%);
-        margin-right: 0;
-      }
-      > .cell:last-child {
-        .flex(1, 1, 100%);
-        margin-right: 0;
-      }
+        > .cell:first-child {
+            .flex(1, 1, 75%);
+        }
+        > .cell:last-child {
+            .flex(1, 1, 25%);
+        }
     }
-
     &.three-quarter.right {
-      > .cell:first-child {
-        .flex(1, 1, 100%);
-        margin-right: 0;
-      }
-      > .cell:last-child {
-        .flex(1, 1, 100%);
-        margin-right: 0;
-      }
+        > .cell:first-child {
+            .flex(1, 1, 25%);
+        }
+        > .cell:last-child {
+            .flex(1, 1, 75%);
+        }
     }
-  }
-  //--------------------
-  // Large
-  //--------------------
-  @media (min-width: 48em) {
+    //--------------------
+    // Small to Medium
+    //--------------------
+    @media (min-width: 250px) and (max-width: 767px) {
+        width: 90%;
+        .rowWrap();
 
-  }
-  //Debug
-  &.test {
-    background: @testBlue;
-    .cell {
-      min-height: 100px;
-      background: @testPink;
+        > .cell {
+            .flex(1, 1, 100%);
+            margin-right: 0;
+            width:        100%;
+        }
+
+        //Half Grids
+        &.half {
+            > .cell {
+                .flex(1, 1, 100%);
+                margin-right: 0;
+            }
+        }
+
+        // Thirds
+        &.thirds {
+            > .cell {
+                .flex(1, 1, 100%);
+                margin-right: 0;
+            }
+        }
+
+        &.quarters {
+            > .cell {
+                .flex(1, 1, 100%);
+                margin-right: 0;
+            }
+        }
+
+        //Three Quarters
+        &.three-quarter.left {
+            > .cell:first-child {
+                .flex(1, 1, 100%);
+                margin-right: 0;
+            }
+            > .cell:last-child {
+                .flex(1, 1, 100%);
+                margin-right: 0;
+            }
+        }
+
+        &.three-quarter.right {
+            > .cell:first-child {
+                .flex(1, 1, 100%);
+                margin-right: 0;
+            }
+            > .cell:last-child {
+                .flex(1, 1, 100%);
+                margin-right: 0;
+            }
+        }
     }
-  }
+    //--------------------
+    // Large
+    //--------------------
+    //@media (min-width: 48em) {
+    //
+    //}
+    //Debug
+    &.test {
+        background: @testBlue;
+        .cell {
+            min-height: 100px;
+            background: @testPink;
+        }
+    }
 }
 
