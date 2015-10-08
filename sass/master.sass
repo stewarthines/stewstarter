@@ -1,0 +1,52 @@
+// Simple SASS based framework
+//============================
+// Stewart Hines | October 2015
+// = = = = Contents: = = = = //
+// 1. Basic Reset, User Variables, Mixins
+// 2. Basic Block Grid - Flex Based
+// 3. Global Elements
+// 4. Block Styles
+// = = = = = = = = = = = = = //
+// = = = = 1. Basic Reset, User Variables, Mixins
+@import reset
+// @import vars
+// @import mixins
+// = = = = 2. Basic Block Grid - Flex Based = = = =//
+@import block-grid
+// = = = = 3. Global Elements = = = =//
+@import layout-header
+@import layout-footer
+// = = = = 4. Block Styles = = = =//
+
+$bpSM: 767px
+
+// = = = = 3. Half Block = = = = //
+// = = = = 2.Block Setup = = = =//
+
+
+section.half
+  header
+    background:$gray50
+    color:white
+
+  footer
+    background:$gray94
+    color:white
+
+  .left,
+  .right
+    @extend %cell
+    flex:0 0 47.5%
+    background: $gray17
+
+  .left
+    margin-right:2.5%
+    background: $gray06
+
+  @media screen and (max-width: $bpSM)
+    .left,
+    .right
+      flex: 0 0 100%
+
+    .left
+      margin-bottom:$spacingBase

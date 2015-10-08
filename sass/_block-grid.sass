@@ -1,0 +1,45 @@
+// Basic Block Grid
+//=================
+// Stewart Hines | October 2015
+// This is a flex-based block model grid.
+
+$bodyBG:white
+
+$containerWidth:1024px
+
+// = = = = 1. Block Grid Extends = = = = //
+%block
+  position: relative
+  z-index: 100
+  display:flex
+  flex-direction: row
+  flex-wrap: wrap
+  width:100%
+  padding: $spacingMD 0
+  border-bottom:1px solid $borderColor
+  background:$bodyBG
+
+%blockContainer
+  flex: 0 0 100%
+  flex-direction: row
+  flex-wrap:wrap
+  align-self:center
+  display: flex
+  width:90%
+  max-width: $containerWidth
+  margin:0 auto
+
+  %cell
+    flex:1
+
+// = = = = 2. Basic Building Block = = = =//
+section
+  @extend %block
+
+  article,
+  header,
+  footer
+    @extend %blockContainer
+
+  article
+    padding:$spacingBase 0

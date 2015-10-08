@@ -1,0 +1,231 @@
+// Stewart's SASS Reset
+//=====================
+// Stewart Hines | October 2015
+//==== Contents ====//
+// 1. Basic Variables & Mixins
+//    A. spacing
+//    B. Colors
+//     B.1 Grays
+//     B.2 Action Colors
+//     B.3 Brand Colors
+//   C.Positioning Extensions
+//   D. Typography Variables
+// 2. Main Elements
+// 3. Typography
+//   A. Headings
+//   B. Paragraphs, Links, & Lists
+//     B.1 Links
+//     B.2 Lists
+//     B.3 Misc In-Line Elements
+// 4. Utility Classes
+//   A. Text Utilities
+//     A.1 Text Positions
+//     A.2 Text States
+
+
+// = = = = 1. Basic Variables and Mixins = = = =//
+//----A. Spacing ----//
+$spacingXS: 0.875rem
+$spacingSM: 1rem
+$spacingBase: 1.5rem
+$spacingMD: 3rem
+$spacingLG: 4.5rem
+$spacingXL: 6rem
+
+//---- B. Colors ----//
+//--B.1 Grays --//
+$gray94:#0f0f0f
+$gray83:#2b2b2b
+$gray72:#474747
+$gray61:#636363
+$gray50:#7f7f7f
+$gray39:#9c9c9c
+$gray28:#b8b8b8
+$gray17:#d4d4d4
+$gray06:#f0f0f0
+
+//--B.2 Action Colors --//
+$action:#0f93f5
+$danger:#f44336
+$success:#46af4a
+$warning:#ff9800
+
+//--B.3 Brand Colors--//
+$brandBase:#334667
+$brandAlt:#a60311
+
+//----C. Positioning Extensions ----//
+// If you're going to use FLEX pull this out.
+%clearfix
+  &:after
+    content:""
+    display:table
+    clear:both
+
+%pull-right
+  display:inline-block
+  float:right
+
+%pull-left
+  display:inline-block
+  float:left
+
+//----D. Typography Variables ----//
+$fontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif
+$fontColor: $gray72
+$fontSize:$spacingSM
+$borderColor: $gray17
+$borderRadius: 4px
+
+// = = = = 2. Main Elements = = = = //
+*
+  margin:0
+  padding:0
+  border:0
+  outline:0
+
+html,
+body
+  height:100%
+  box-sizing:border-box
+  font-family: $fontFamily
+  color:$fontColor
+  font-size:$fontSize
+  font-weight:300
+  letter-spacing:0.1
+  line-height:$spacingBase
+
+// = = = = 3. Typography = = = = //
+
+//--A Headings--//
+h1,
+%h1
+  //Headline - 44px
+  font-size:2.75rem
+  line-height:$spacingMD
+
+h2,
+%h2
+  //31px
+  font-size:1.9375rem
+  line-height: $spacingMD
+
+h3,
+%h3
+  //Heading - 22px
+  font-size:1.25rem
+  line-height:$spacingBase
+  font-weight:500
+
+h4,
+%h4
+  //SubHead - 16px
+  font-size:$fontSize
+  line-height:$spacingBase
+  font-weight:500
+  color:$gray50
+
+//--B Paragraphs, Links, Lists, & Quotes--//
+p,
+ul,
+ol,
+pre,
+table,
+blockquote
+  margin:$spacingBase 0
+
+//--B.1 Links --//
+a
+  text-decoration:none
+  font-weight:500
+  color:$action
+  transition: color 250ms ease-in-out
+  &:hover
+    color:darken($action,15%)
+    transition: color 250ms ease-in-out
+
+//--B.2 Lists--//
+ol,
+ul
+  padding-left: $spacingBase
+  margin-left:$spacingBase
+ol.no-style,
+ul.no-style
+  list-style: none
+  margin-left:0
+  padding-left:0
+
+//--B.3 Misc In-Line Items--//
+strong,
+%strong
+  font-weight:500
+
+small,
+%small
+  font-size:$spacingXS
+
+blockquote
+%quote
+  display:block
+  font-size:1.25rem
+  line-height:$spacingBase
+  margin: $spacingBase auto
+  font-style:italic
+  font-weight:300
+  color:$gray50
+
+hr
+  display:block
+  border:none
+  outline:none
+  width:90%
+  margin:$spacingSM auto
+  height: 1px
+  background: $borderColor
+
+img
+  display:inline-block
+  border:none
+  outline: none
+  vertical-align:middle
+  max-width:100%
+
+// = = = = 4. Utility Classes = = = = //
+
+//-- A.1 Text Positions--//
+.text-center,
+%textCenter
+  text-align:center
+
+.text-right
+%textRight
+  text-align:right
+
+.text-left
+%textLeft
+  text-align: left
+
+.text-justify
+%textJutify
+  text-align: justify
+
+//-- A.2 Text States --//
+.text-action,
+%textAction
+  color:$action
+
+.text-danger
+%textDanger
+  color:$danger
+
+.text-success
+%textSuccess
+  color:$success
+
+.text-warning
+%textWarning
+  color:$warning
+
+.text-muted
+%textMuted
+  color:$gray50
