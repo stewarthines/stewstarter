@@ -4,7 +4,7 @@
 
 This is my starter pack. Just combining a lot of things that I've learned to make my own framework. The purpose of the framework is to be a starting point for future project. So, this is not an end in and of it's self. Let's take a quick look at what's inside!
 
-### Basic Files and wishlist
+### Basic Files and Wish List
 - [x] My own very own **Reset.sass** file that's [based off a tutorial from TUTS+](http://code.tutsplus.com/tutorials/quick-tip-create-your-own-simple-resetcss-file--net-206)
 - [x] A Typographic based vertical spacing system from [Gridlvoer](http://www.gridlover.net/app/)
 - [x] 11 Shades of Gray. Not 50. [From Viget](https://viget.com/inspire/shades-of-gray-yes-really)
