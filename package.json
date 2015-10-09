@@ -8,8 +8,10 @@
     "node-sass": "^3.3.3"
   },
   "devDependencies": {
+    "browser-sync": "^2.9.10",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.0.2",
+    "gulp-livereload": "^3.8.1",
     "gulp-sass": "^2.0.4"
   },
   "scripts": {

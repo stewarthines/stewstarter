@@ -22,7 +22,7 @@ This is my starter pack. Just combining a lot of things that I've learned to mak
 - [x] Gulp!
 - [x] Auto compile my SASS - [Gulp Sass baby.](https://www.npmjs.com/package/gulp-sass)
 - [x] Use [gulp-autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer)
-- [ ] Auto refresh the browser
+- [x] Auto refresh the browser
 - [ ] Auto compress images
-- [ ] Angularjs Based
+- [x] Angularjs Based
 - [ ] As semantic as I know how to get the HTML
