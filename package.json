@@ -1,7 +1,7 @@
 {
   "name": "stewsstarter",
   "version": "1.0.0",
-  "description": "",
+  "description": "*Stewart Hines | October 2015*",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.9.0",
@@ -16,5 +16,17 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Stewart Hines",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stewarthines/stewstarter.git"
+  },
+  "keywords": [
+    "framework",
+    "starter"
+  ],
+  "bugs": {
+    "url": "https://github.com/stewarthines/stewstarter/issues"
+  },
+  "homepage": "https://github.com/stewarthines/stewstarter#readme"
 }

@@ -5,48 +5,34 @@
 // 1. Basic Reset, User Variables, Mixins
 // 2. Basic Block Grid - Flex Based
 // 3. Global Elements
-// 4. Block Styles
 // = = = = = = = = = = = = = //
 // = = = = 1. Basic Reset, User Variables, Mixins
 @import reset
-// @import vars
-// @import mixins
+@import config
+@import mixins
 // = = = = 2. Basic Block Grid - Flex Based = = = =//
 @import block-grid
+@import block-styles
 // = = = = 3. Global Elements = = = =//
 @import layout-header
 @import layout-footer
-// = = = = 4. Block Styles = = = =//
 
-$bpSM: 767px
+section.threefourths-left
+    .cell-one
+        flex: 0 0 66.666%
+        order: 1
+        margin-right:$gutter
 
-// = = = = 3. Half Block = = = = //
-// = = = = 2.Block Setup = = = =//
+    .cell-two
+        flex: 0 0 30.8333%
+        order: 2
 
+section.threefourths-right
+    .cell-one
+        flex: 0 0 30.8333%
+        order: 1
+        margin-right:$gutter
 
-section.half
-  header
-    background:$gray50
-    color:white
-
-  footer
-    background:$gray94
-    color:white
-
-  .left,
-  .right
-    @extend %cell
-    flex:0 0 47.5%
-    background: $gray17
-
-  .left
-    margin-right:2.5%
-    background: $gray06
-
-  @media screen and (max-width: $bpSM)
-    .left,
-    .right
-      flex: 0 0 100%
-
-    .left
-      margin-bottom:$spacingBase
+    .cell-two
+        flex: 0 0 66.666%
+        order: 2

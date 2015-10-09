@@ -2,10 +2,19 @@
 //=================
 // Stewart Hines | October 2015
 // This is a flex-based block model grid.
-
-$bodyBG:white
-
-$containerWidth:1024px
+// = = = = Contents: = = = =//
+// 1. Block Grid Extends
+// 2. Basic Building Blocks
+// 3. Block Types
+//     A. Full Width
+//        A.1 Centered
+//    B. Half
+//    C. Trips
+//    D. Quads
+//    E. Three Fourths
+//        E.1 Three Fourths Left
+//        E.2 Three Fourths Right
+// = = = = = = = = = = = = =//
 
 // = = = = 1. Block Grid Extends = = = = //
 %block
@@ -15,7 +24,7 @@ $containerWidth:1024px
   flex-direction: row
   flex-wrap: wrap
   width:100%
-  padding: $spacingMD 0
+  padding: $spacingLG 0
   border-bottom:1px solid $borderColor
   background:$bodyBG
 
@@ -29,17 +38,84 @@ $containerWidth:1024px
   max-width: $containerWidth
   margin:0 auto
 
+  @media screen and (max-width:$bpSM)
+      flex-wrap: wrap
+      max-width:90%
+
+
   %cell
     flex:1
 
 // = = = = 2. Basic Building Block = = = =//
 section
   @extend %block
-
   article,
   header,
   footer
     @extend %blockContainer
-
   article
-    padding:$spacingBase 0
+    padding:$spacingMD 0
+
+// = = = = 3. Block Types = = = = //
+
+// - - - A. Full Width - - -//
+section.full
+    article
+        display:block
+
+// - - A.1 Full Width Center - -//
+section.full-center
+    header,
+    article,
+    footer
+        display:block
+        text-align: center
+
+
+// - - - B. Half - - - //
+section.half
+
+  .cell-one,
+  .cell-two
+    flex:0 0 47.5%
+
+  .cell-one
+    margin-right:2.5%
+
+  @media screen and (max-width: $bpSM)
+
+    .left,
+    .right
+      flex: 0 0 100%
+      margin-left:0
+
+    .left
+      margin-bottom:$spacingBase
+
+// - - - C. Trips - - - //
+section.trips
+    .cell-one,
+    .cell-two,
+    .cell-three
+        flex: 1
+        margin-right:$gutter
+    .cell-three
+        margin-right:0
+
+// - - - D. Quads - - - //
+section.quads
+    .cell-one,
+    .cell-two,
+    .cell-three,
+    .cell-four
+        flex:1
+        margin-right:$gutter
+    .cell-four
+        margin-right:0
+
+// - - - E. Three Fourths - - - //
+// - - E.1 Three Fourths Left - - //
+section.threeforths-left
+
+// - - E.2 Three Fourths Right - - //
+section.threeforths-right
