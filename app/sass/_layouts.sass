@@ -6,7 +6,20 @@
 %layout
     header
         width:100%
-        background:orange
 
 section.layout
     @extend %layout
+    &.two-column
+        display:flex
+        flex-direction: columns
+        background:limegreen
+
+        article
+        aside
+            flex:1
+
+        article
+            background:purple
+            
+        aside
+            background:red
