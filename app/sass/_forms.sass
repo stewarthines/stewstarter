@@ -1,6 +1,20 @@
+// Basic Forms
+//= = = = = = = = =
+
 input
   display:block
   width:100%
-  border:1px solid $borderColor
-  padding:$spacingSM 0
+  margin-bottom:$spacingBase
+  padding:$spacingXS 0
+  font-size:$fontSize
+  font-weight: 300
+  letter-spacing:0.09rem
   text-indent:$spacingXS
+  border:1px solid $borderColor
+  border-radius:$borderRadius
+  box-shadow:$z1-insetShadow
+  transition: border-color 250ms ease-in-out, box-shadow 250ms ease-in-out
+  &:focus
+    border-color:$action
+    box-shadow: 0 0 6px rgba($action,0.45)
+    transition: border-color 250ms ease-in-out, box-shadow 250ms ease-in-out

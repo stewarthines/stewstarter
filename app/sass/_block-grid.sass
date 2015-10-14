@@ -29,7 +29,7 @@
   background:$bodyBG
 
 %blockContainer
-  flex: 0 0 100%
+  flex: 0 0 90%
   flex-direction: row
   flex-wrap:wrap
   align-self:center
@@ -37,10 +37,12 @@
   width:90%
   max-width: $containerWidth
   margin:0 auto
-
   @media screen and (max-width:$bpSM)
-      flex-wrap: wrap
-      max-width:90%
+    flex-wrap: wrap
+    flex: 0 0 90%
+    max-width:$containerWidth
+
+
 
 
   %cell

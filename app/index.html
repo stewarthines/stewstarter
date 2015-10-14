@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="webPage">
 
 <head>
   <meta charset="utf-8">
@@ -10,6 +10,7 @@
   <!-- /styles -->
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+  <script src="scripts/webpage.js"></script>
   <!-- /scripts -->
   <!-- Favicons -->
   <link rel="icon" type="img" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -18,7 +19,7 @@
   <!-- /Favicons -->
 </head>
 
-<body ng-init="list=[{name:'Scott', age: 29},{name:'Batman', age: 30},{name:'Killer', age: 33},{name:'Roger', age: 47},{name:'Dave', age: 52},{name:'Ben', age: 64}]">
+<body ng-controller="webPageController">
   <!-- Global header -->
   <header role="banner">
     <nav role="navigation">
@@ -39,16 +40,21 @@
     <!-- Full Width Block -->
     <section class="full">
       <header>
-        <h1>A Full Width Block</h1>
+        <h1>A Little Angular Controler</h1>
+        <input type="text" ng-model="search" placeholder="Search People">
       </header>
       <article>
+        <h3>A List of People</h3>
         <ul>
-          <input type="text" ng-model="search" placeholder="search">
           <li ng-repeat="item in list | filter:search" >
-            {{item.name}}
-            {{item.age}}
+            {{item.name}} - <em>{{item.age}}</em>
           </li>
         </ul>
+        <form ng-submit="addPerson()">
+          <input type="text" placeholder="Name" ng-model="name">
+          <input type="Number" placeholder="Age" ng-model="age">
+          <input type="submit" value="Submit">
+        </form>
       </article>
       <footer>
         <small>This is the footer block.</small>
