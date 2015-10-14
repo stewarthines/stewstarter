@@ -74,8 +74,8 @@ I choose `.SASS` over `.SCSS` `.LESS` or `.CSS` because [I like it better.]((htt
 - `_mixins.sass` Mixins are reuseable chunks of code. They can be simple styles like the shadows or whole chucnks of code. If you do something over and over again, put it here. If it's a single value put it in the config.
 - `_forms.sass` is where i style form elements like inputs and textareas
 - `_btns.sass` is where I style buttons.
-- `_block-grid.sass` is where the structure comes from. It's based off of [Start Up Framework,](http://designmodo.com/startup/) [Blocs App,](http://blocsapp.com/) and [Solved by Flexbox.]() It uses the newer (Flexbox)[https://philipwalton.github.io/solved-by-flexbox/] instead of the (Older)[http://960.gs/] floats and clears. I have built it so that you don't use a normal grid but instead you use pre-built blocks. I'll add a grild later.
+- `_block-grid.sass` is where the structure comes from. It's based off of [Start Up Framework,](http://designmodo.com/startup/) [Blocs App,](http://blocsapp.com/) and [Solved by Flexbox.](https://philipwalton.github.io/solved-by-flexbox/) It uses the newer [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) instead of the [Older](http://960.gs/) floats and clears. I have built it so that you don't use a normal grid but instead you use pre-built blocks. I'll add a grild later.
 - `_block-styles.sass` This is where I'll add special styles to each block. Blocks should be broken apart. So a hero block should get it's own `_block-hero.sass` file.
 - `_layous.sass` This is where I start to deal with things that don't fit into the block model. It's not done yet.
 - `_layous-header.sass` This is for the **global** header. You know, the one that goes on each page. It'll be responsive in the end. Right now, it's just kind of there.
-- `_layous-footer.sass` This is for the **global** footer. You know ,the one that goes on the bottom of each page. It's not even close to done yet. 
+- `_layous-footer.sass` This is for the **global** footer. You know ,the one that goes on the bottom of each page. It's not even close to done yet.
