@@ -12,7 +12,7 @@ body {
   color: #474747;
   font-size: 1rem;
   font-weight: 300;
-  letter-spacing: 0.1;
+  letter-spacing: 0.1rem;
   line-height: 1.5rem; }
 
 h1 {
@@ -103,7 +103,7 @@ section {
 
 section article,
 section header,
-section footer, header[role="banner"] nav {
+section footer, section.layout, header[role="banner"] nav {
   flex: 0 0 100%;
   flex-direction: row;
   flex-wrap: wrap;
@@ -115,20 +115,22 @@ section footer, header[role="banner"] nav {
   @media screen and (max-width: 767px) {
     section article,
     section header,
-    section footer, header[role="banner"] nav {
+    section footer, section.layout, header[role="banner"] nav {
       flex-wrap: wrap;
       max-width: 90%; } }
   header[role="banner"] section article .brand,
   section header[role="banner"] .brand,
   header[role="banner"] section footer .brand,
+  header[role="banner"] section.layout .brand,
   header[role="banner"] nav .brand,
   header[role="banner"] .barnd section article h1,
   section header[role="banner"] .barnd h1,
   header[role="banner"] .barnd section footer h1,
+  header[role="banner"] .barnd section.layout h1,
   header[role="banner"] nav .barnd h1,
   header[role="banner"] .barnd nav h1,
   header[role="banner"] section article ul, section header[role="banner"] ul,
-  header[role="banner"] section footer ul, header[role="banner"] nav ul {
+  header[role="banner"] section footer ul, header[role="banner"] section.layout ul, header[role="banner"] nav ul {
     flex: 1; }
 
 section article {
@@ -224,19 +226,15 @@ section.warning {
   background: #ff9800;
   color: white; }
 
-section.layout header {
-  width: 100%; }
-
-section.layout.two-column {
-  display: flex;
-  flex-direction: columns;
-  background: limegreen; }
-  section.layout.two-column aside {
-    flex: 1; }
-  section.layout.two-column article {
-    background: purple; }
-  section.layout.two-column aside {
-    background: red; }
+section.layout header,
+section.layout article,
+section.layout aside,
+section.layout footer {
+  flex: 1;
+  flex-wrap: wrap;
+  width: 64rem;
+  padding: 0;
+  margin: 0; }
 
 header[role="banner"] {
   position: relative;
