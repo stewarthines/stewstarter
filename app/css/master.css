@@ -90,6 +90,13 @@ img {
 .text-action {
   color: #0f93f5; }
 
+input {
+  display: block;
+  width: 100%;
+  border: 1px solid #d4d4d4;
+  padding: 1rem 0;
+  text-indent: 0.875rem; }
+
 section {
   position: relative;
   z-index: 100;
