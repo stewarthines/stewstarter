@@ -79,3 +79,7 @@ I choose `.SASS` over `.SCSS` `.LESS` or `.CSS` because [I like it better.]((htt
 - `_layous.sass` This is where I start to deal with things that don't fit into the block model. It's not done yet.
 - `_layous-header.sass` This is for the **global** header. You know, the one that goes on each page. It'll be responsive in the end. Right now, it's just kind of there.
 - `_layous-footer.sass` This is for the **global** footer. You know ,the one that goes on the bottom of each page. It's not even close to done yet.
+
+### Angular Stuff
+
+I'm new to angular. We use it here at work. It's pretty nice. I feel like HTML should have been written with some of these superpowers. That said. I'm still new to this game. So you can follow the same tutorial I am. It's [LevelUp Tut's](http://leveluptuts.com/) fantastic [AngularJS for Everyone](https://www.youtube.com/playlist?list=PLLnpHn493BHF6utwkwpo7RN-GPg1sZhvK) series.
