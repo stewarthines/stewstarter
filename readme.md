@@ -17,6 +17,7 @@ This is my starter pack. Just combining a lot of things that I've learned to mak
 - [ ] Optional *"sticky"* header
 - [ ] Dropdowns for the header
 - [ ] Consistent look and feel / art style
+- [ ] Sketch, Photoshop, & Illustrator templates. Or, you know, just Sketch. 
 
 ### Nerdy Code Stuff
 - [x] .SASS based styles instead of.SCSS or .LESS [(Thanks @DevTips!)](https://www.youtube.com/watch?v=-Z3qznaE9vc)
@@ -25,6 +26,7 @@ This is my starter pack. Just combining a lot of things that I've learned to mak
 - [x] Use [gulp-autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer)
 - [x] Auto refresh the browser
 - [ ] Auto compress images
+- [ ] Compress Code & Strip Comments for production
 - [x] Angularjs Based
 - [ ] As semantic as I know how to get the HTML
 

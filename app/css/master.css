@@ -279,11 +279,46 @@ header[role="banner"] {
     padding: 0; }
   header[role="banner"] .brand,
   header[role="banner"] .brand h1 {
-    margin: 0; }
+    margin: 0;
+    font-size: 1.5rem; }
   header[role="banner"] ul {
-    text-align: right; }
+    position: relative; }
+    @media screen and (max-width: 767px) {
+      header[role="banner"] ul text-align:right {
+        transform: translateY(-1000px);
+        display: none;
+        visibility: hidden;
+        position: absolute;
+        top: 77px;
+        left: 0;
+        right: 0;
+        transform: translateY(0);
+        background: #f0f0f0;
+        display: block;
+        flex: 0 0 100%;
+        visibility: visible;
+        width: 100%;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+        header[role="banner"] ul text-align:right .divder {
+          display: none; }
+        header[role="banner"] ul text-align:right li {
+          display: block;
+          width: 100%;
+          padding: 0.875rem 0;
+          text-align: center;
+          border-bottom: 1px solid #d4d4d4; } }
     header[role="banner"] ul li {
       display: inline-block; }
+  header[role="banner"] .mobile-menu {
+    display: none;
+    visibility: hidden;
+    align-self: center;
+    cursor: pointer;
+    color: #0f93f5; }
+    @media screen and (max-width: 767px) {
+      header[role="banner"] .mobile-menu {
+        display: inline-block;
+        visibility: visible; } }
 
 footer[role="footer"] {
   display: flex;

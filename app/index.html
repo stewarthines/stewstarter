@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Stew's Starter Pack</title>
   <!-- styles -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <link rel="stylesheet" href="css/master.css" media="screen" title="no title" charset="utf-8">
   <!-- /styles -->
   <!-- Scripts -->
@@ -24,9 +26,12 @@
   <header role="banner">
     <nav role="navigation">
       <div class="brand">
-        <h1><a href="#">Brand</a></h1>
+        <h1><a href="/">Stew's Starter Pack</a></h1>
       </div>
-      <ul>
+      <div class="mobile-menu" ng-click="showMobileMenu=!showMobileMenu">
+        <i class="material-icons">menu</i>
+      </div>
+      <ul ng-class="{'show' : showMobileMenu }">
         <li><a href="#">Product</a></li>
         <li class="divder"> | </li>
         <li><a href="#">About</a></li>
