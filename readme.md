@@ -9,7 +9,8 @@ This is my starter pack. Just combining a lot of things that I've learned to mak
 - [x] A Typographic based vertical spacing system from [Gridlvoer](http://www.gridlover.net/app/)
 - [x] 11 Shades of Gray. Not 50. [From Viget](https://viget.com/inspire/shades-of-gray-yes-really)
 - [x] Good Contrast for my text, backgrounds, and borders. [Thanks Colorable](http://jxnblk.com/colorable/demos/text/)
-- [ ] A very simple (responsive) Flexbox based Block Grid system. It makes blocks.
+- [ ] A very simple (responsive) Flexbox based Block System.
+- [ ] A very simpe (responsive) Flexbox grid system. Based off of [Solved by Flexbox.](https://philipwalton.github.io/solved-by-flexbox/)
 - [ ] Basic Forms
 - [ ] Basic Buttons
 - [ ] Simple Global Responsive Header
