@@ -28,3 +28,32 @@ $z2-insetShadow: inset 0  3px  6px rgba(#000, 0.16), inset 0  3px  6px rgba(#000
 $z3-insetShadow: inset 0 10px 20px rgba(#000, 0.19), inset 0  6px  6px rgba(#000, 0.23)
 $z4-insetShadow: inset 0 14px 28px rgba(#000, 0.25), inset 0 10px 10px rgba(#000, 0.22)
 $z5-insetShadow: inset 0 19px 38px rgba(#000, 0.30), inset 0 15px 12px rgba(#000, 0.22)
+
+//= = = = 2. Buttons = = = =//
+=btnBasic($varBtnBG:$btnBG, $varBtnFont:$btnFontColor, $varBtnBorder:$borderColor)
+    display:inline-block
+    padding:$spacingXS $spacingSM
+    color: $varBtnFont
+    font-size: $spacingXS
+    font-weight:600
+    line-height:$spacingBase
+    text-align:center
+    text-decoration:none
+    text-transform:uppercase
+    outline:none
+    cursor: pointer
+    vertical-align: middle
+    border:1px solid $borderColor
+    border-color:$varBtnBorder
+    border-radius: $borderRadius
+    box-shadow:$z1-shadow
+    background:$varBtnBG
+    &:hover
+        box-shadow:$z2-shadow
+        background:darken($varBtnBG, 10%)
+        transition: box-shadow 250ms ease-in-out, background 250ms ease-in-out
+    &:active,
+    &.selected
+        box-shadow:$z1-insetShadow
+        background:darken($varBtnBG, 15%)
+        transition: box-shadow 250ms ease-in-out, background 250ms ease-in-out

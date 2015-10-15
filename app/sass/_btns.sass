@@ -1,0 +1,45 @@
+// Buttons
+//= = = = =
+// Stewart Hines | October 2015
+// Button styles are in _mixins.sass
+
+
+.btn,
+a.btn,
+button,
+button.btn,
+input[type="submit"]
+    +btnBasic()
+
+.btn.action,
+a.btn.action,
+button.action,
+button.btn.action,
+input.action[type="submit"]
+    +btnBasic($action, white, darken($action,10%))
+
+.btn.danger,
+a.btn.danger,
+button.danger,
+button.btn.danger,
+input.danger[type="submit"]
+    +btnBasic($danger, white, darken($danger,10%))
+
+.btn.success,
+a.btn.success,
+button.success,
+button.btn.success,
+input.success[type="submit"]
+    +btnBasic($success, white, darken($success,10%))
+
+.btn.warning,
+a.btn.warning,
+button.warning,
+button.btn.warning,
+input.warning[type="submit"]
+    +btnBasic($warning, white, darken($warning,10%))
+
+// = = = = 2. Button Icons = = = =//
+// I'm using Google's Material Icons. This will probably change per icon
+.btn .material-icons
+    vertical-align:middle

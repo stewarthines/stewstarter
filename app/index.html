@@ -50,6 +50,14 @@
       </header>
       <article>
         <h3>A List of People</h3>
+        <a href="#" class="btn"><i class="material-icons">book</i> Default Button</a>
+        <a href="#" class="btn action"><i class="material-icons">verified_user</i> Action Button</a>
+        <a href="#" class="btn danger"><i class="material-icons">cancel</i> Danger Button</a>
+        <a href="#" class="btn success"><i class="material-icons">check_circle</i> Success Button</a>
+        <a href="#" class="btn warning"><i class="material-icons">warning</i> Warning Button</a>
+
+        <button class="btn icon danger"><i class="material-icons">call_end</i></button>
+
         <ul>
           <li ng-repeat="item in list | filter:search" >
             {{item.name}} - <em>{{item.age}}</em>
