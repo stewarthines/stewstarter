@@ -25,22 +25,31 @@ select
   &:focus
     transition: border-color 250ms ease-in-out, box-shadow 250ms ease-in-out
 
+textarea
+  hieght:auto
+  max-height: none
+  padding:$spacingXS 0
+
 input.action,
-textarea.action
+textarea.action,
+select.action
   +inputStyle(white, darken($action,10%), $action,$action)
   +inputState($action,$action)
 
 input.danger,
-textarea.danger
+textarea.danger,
+select.action
   +inputStyle(white, darken($danger,10%), $danger,$danger)
   +inputState($danger,$danger)
 
 input.success,
-textarea.success
+textarea.success,
+select.action
   +inputStyle(white, darken($success,10%), $success,$success)
   +inputState($success,$success)
 
 input.warning,
-textarea.warning
+textarea.warning,
+select.action
   +inputStyle(white, darken($warning,10%), $warning,$warning)
   +inputState($warning,$warning)

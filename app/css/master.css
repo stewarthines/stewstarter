@@ -232,60 +232,77 @@ select {
   select:focus {
     transition: border-color 250ms ease-in-out, box-shadow 250ms ease-in-out; }
 
+textarea {
+  hieght: auto;
+  max-height: none;
+  padding: 0.875rem 0; }
+
 input.action,
-textarea.action {
+textarea.action,
+select.action {
   border: 1px solid #0877c9;
   background-color: white !important;
   box-shadow: 0 0 6px rgba(15, 147, 245, 0.45), inset 0 1px 3px rgba(0, 0, 0, 0.12), inset 0 1px 2px rgba(0, 0, 0, 0.24);
   color: #474747; }
   input.action:focus,
-  textarea.action:focus {
+  textarea.action:focus,
+  select.action:focus {
     border-color: #0f93f5;
     box-shadow: 0 0 6px rgba(15, 147, 245, 0.45); }
   input.action:focus,
-  textarea.action:focus {
+  textarea.action:focus,
+  select.action:focus {
     box-shadow: 0 0 12px rgba(15, 147, 245, 0.6); }
 
 input.danger,
-textarea.danger {
+textarea.danger,
+select.action {
   border: 1px solid #ea1c0d;
   background-color: white !important;
   box-shadow: 0 0 6px rgba(244, 67, 54, 0.45), inset 0 1px 3px rgba(0, 0, 0, 0.12), inset 0 1px 2px rgba(0, 0, 0, 0.24);
   color: #474747; }
   input.danger:focus,
-  textarea.danger:focus {
+  textarea.danger:focus,
+  select.action:focus {
     border-color: #f44336;
     box-shadow: 0 0 6px rgba(244, 67, 54, 0.45); }
   input.danger:focus,
-  textarea.danger:focus {
+  textarea.danger:focus,
+  select.action:focus {
     box-shadow: 0 0 12px rgba(244, 67, 54, 0.6); }
 
 input.success,
-textarea.success {
+textarea.success,
+select.action {
   border: 1px solid #378b3b;
   background-color: white !important;
   box-shadow: 0 0 6px rgba(70, 175, 74, 0.45), inset 0 1px 3px rgba(0, 0, 0, 0.12), inset 0 1px 2px rgba(0, 0, 0, 0.24);
   color: #474747; }
   input.success:focus,
-  textarea.success:focus {
+  textarea.success:focus,
+  select.action:focus {
     border-color: #46af4a;
     box-shadow: 0 0 6px rgba(70, 175, 74, 0.45); }
   input.success:focus,
-  textarea.success:focus {
+  textarea.success:focus,
+  select.action:focus {
     box-shadow: 0 0 12px rgba(70, 175, 74, 0.6); }
 
 input.warning,
-textarea.warning {
+textarea.warning,
+select.action {
   border: 1px solid #cc7a00;
   background-color: white !important;
   box-shadow: 0 0 6px rgba(255, 152, 0, 0.45), inset 0 1px 3px rgba(0, 0, 0, 0.12), inset 0 1px 2px rgba(0, 0, 0, 0.24);
   color: #474747; }
   input.warning:focus,
-  textarea.warning:focus {
+  textarea.warning:focus,
+  select.action:focus {
     border-color: #ff9800;
     box-shadow: 0 0 6px rgba(255, 152, 0, 0.45); }
   input.warning:focus,
-  textarea.warning:focus {
+  textarea.warning:focus,
+  select.action:focus {
     box-shadow: 0 0 12px rgba(255, 152, 0, 0.6); }
 
 .btn,
