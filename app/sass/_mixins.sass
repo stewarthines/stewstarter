@@ -60,6 +60,8 @@
 =btnBasic($varBtnBG:$btnBG, $varBtnFont:$btnFontColor, $varBtnBorder:$borderColor)
     display:inline-block
     margin-bottom: $spacingBase
+    height:$formHeight
+    max-height:$formHeight
     padding:$elementPadding $spacingSM
     color: $varBtnFont
     font-size: $spacingXS
@@ -86,7 +88,21 @@
         background:darken($varBtnBG, 15%)
         transition: box-shadow 250ms ease-in-out, background 250ms ease-in-out
 
-// = = = = 3. Box Shadows = = = =//
+// = = = = 4. Inputs = = = = //
+=inputStyle($varBGColor:white, $varBorderColor:$borderColor, $varFocusBorderColor:$action, $varFocusShaow:$action)
+  border:1px solid $varBorderColor
+  background-color:$varBGColor !important
+  &:focus
+    border-color:$varFocusBorderColor
+    box-shadow: 0 0 6px rgba($varFocusShaow,0.45)
+
+=inputState($varStateShadow:white, $varStateFocusShaow:$gray06)
+  box-shadow: 0 0 6px rgba($varStateShadow,0.45), $z1-insetShadow
+  color:$fontColor
+  &:focus
+    box-shadow: 0 0 12px rgba($varStateFocusShaow,0.60)
+
+// = = = = 5. Box Shadows = = = =//
 // SRC: http://codepen.io/goodtouch/pen/atvDw
 //-- A. Standard Shadows --//
 $z1-shadow: 0  1px  3px rgba(#000, 0.12), 0  1px  2px rgba(#000, 0.24)

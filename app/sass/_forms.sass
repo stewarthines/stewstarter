@@ -1,20 +1,46 @@
 // Basic Forms
 //= = = = = = = = =
 
-input
+$formHeight:$spacingMD
+
+input,
+textarea,
+select
+  +inputStyle()
   display:block
   width:100%
+  height:$formHeight
+  max-height:$formHeight
   margin-bottom:$spacingBase
-  padding:$spacingXS 0
+  // padding:$spacingXS 0
+  color:$fontColor
   font-size:$fontSize
   font-weight: 300
+  line-height:$spacingBase
   letter-spacing:0.09rem
   text-indent:$spacingXS
-  border:1px solid $borderColor
   border-radius:$borderRadius
   box-shadow:$z1-insetShadow
   transition: border-color 250ms ease-in-out, box-shadow 250ms ease-in-out
   &:focus
-    border-color:$action
-    box-shadow: 0 0 6px rgba($action,0.45)
     transition: border-color 250ms ease-in-out, box-shadow 250ms ease-in-out
+
+input.action,
+textarea.action
+  +inputStyle(white, darken($action,10%), $action,$action)
+  +inputState($action,$action)
+
+input.danger,
+textarea.danger
+  +inputStyle(white, darken($danger,10%), $danger,$danger)
+  +inputState($danger,$danger)
+
+input.success,
+textarea.success
+  +inputStyle(white, darken($success,10%), $success,$success)
+  +inputState($success,$success)
+
+input.warning,
+textarea.warning
+  +inputStyle(white, darken($warning,10%), $warning,$warning)
+  +inputState($warning,$warning)
