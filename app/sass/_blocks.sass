@@ -25,115 +25,19 @@
   flex-wrap: wrap
   width:100%
   padding: $spacingLG 0
-  border-bottom:1px solid $borderColor
-  background:$bodyBG
+
 
 %blockContainer
-  flex: 0 0 90%
-  flex-direction: row
-  flex-wrap:wrap
-  align-self:center
-  display: flex
-  width:90%
-  max-width: $containerWidth
-  margin:0 auto
-  @media screen and (max-width:$bpSM)
-    flex-wrap: wrap
-    flex: 0 0 90%
-    max-width:$containerWidth
-
-
-
-
-  %cell
-    flex:1
+  @extend %grid
 
 // = = = = 2. Basic Building Block = = = =//
 .block
   @extend %block
-  article,
   header,
   footer
     @extend %blockContainer
+    display:block
+
   article
+    @extend %blockContainer
     padding:$spacingMD 0
-
-// = = = = 3. Block Types = = = = //
-
-// - - - A. Full Width - - -//
-.block.full
-    article
-        display:block
-
-// - - A.1 Full Width Center - -//
-.block.full-center
-    header,
-    article,
-    footer
-        display:block
-        text-align: center
-
-
-// - - - B. Half - - - //
-.block.half
-
-  .cell-one,
-  .cell-two
-    flex:0 0 47.5%
-
-  .cell-one
-    margin-right:2.5%
-
-  @media screen and (max-width: $bpSM)
-
-    .left,
-    .right
-      flex: 0 0 100%
-      margin-left:0
-
-    .left
-      margin-bottom:$spacingBase
-
-// - - - C. Trips - - - //
-.block.trips
-    .cell-one,
-    .cell-two,
-    .cell-three
-        flex: 1
-        margin-right:$gutter
-    .cell-three
-        margin-right:0
-
-// - - - D. Quads - - - //
-.block.quads
-    .cell-one,
-    .cell-two,
-    .cell-three,
-    .cell-four
-        flex:1
-        margin-right:$gutter
-    .cell-four
-        margin-right:0
-
-// - - - E. Three Fourths - - - //
-// - - E.1 Three Fourths Left - - //
-.block.threefourths-left
-    .cell-one
-        flex: 0 0 66.666%
-        order: 1
-        margin-right:$gutter
-
-    .cell-two
-        flex: 0 0 30.8333%
-        order: 2
-
-// - - E.2 Three Fourths Right - - //
-.block.threefourths-right
-    .cell-one
-        flex: 0 0 30.8333%
-        order: 1
-        margin-right:$gutter
-
-    .cell-two
-        flex: 0 0 66.666%
-        order: 2

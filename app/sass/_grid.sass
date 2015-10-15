@@ -4,55 +4,6 @@
 // Based off of Solved by Flexbox
 // Right Now, Grids should be in a block-full
 
-$gridGutter:1.4%
-
-//- - A. Grid Container - - //
-%grid
-  display:flex
-  felx-direction:row
-  flex-wrap:wrap
-  width:100%
-  max-width:$containerWidth
-  margin:0 auto
-
-  &.align-top
-    align-items: flex-start
-  &.align-bottom
-    align-items:flex-end
-  &.align-center
-    align-items:center
-
-  @media screen and (max-width:$bpSM)
-    width:98%
-
-// - - B. Grid Cell - - //
-%gridCell
-  flex:1
-  margin:0 $gridGutter
-
-  &:first-child
-    margin-left:0
-  &:last-child
-    margin-right:0
-
-  @media screen and (max-width:$bpSM)
-    flex: 0 0 100%
-    margin: 0
-    margin-bottom:$gridGutter
-
-// - - C. Grid Test - - //
-%gridTest
-  // This is for testing
-  background:lighten($gray06, 3%)
-
-  h3
-    padding: $spacingXS 0
-    text-indent: $spacingXS
-    background:$gray06
-    border:1px solid $borderColor
-    border-radius:$borderRadius
-    margin-bottom:$spacingBase
-
 // = = = = 1. Basic Grid Container = = = = //
 .grid,
 %grid

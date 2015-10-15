@@ -115,14 +115,14 @@ h1,
   //Headline - 44px
   font-size:2.75rem
   line-height:$spacingMD
-  margin-bottom:%spacingMD
+  margin-bottom:$spacingMD
 
 h2,
 %h2
   //31px
   font-size:1.9375rem
   line-height: $spacingMD
-  margin-bottom:$spacingMD
+
 
 h3,
 %h3
@@ -192,7 +192,7 @@ hr
   display:block
   border:none
   outline:none
-  width:90%
+  width:100%
   margin:$spacingSM auto
   height: 1px
   background: $borderColor
@@ -228,18 +228,36 @@ img
 %textAction
   color:$action
 
-.text-danger
+.text-danger,
 %textDanger
   color:$danger
 
-.text-success
+.text-success,
 %textSuccess
   color:$success
 
-.text-warning
+.text-warning,
 %textWarning
   color:$warning
 
-.text-muted
+.text-muted,
 %textMuted
   color:$gray50
+
+//-- B Text On States --//
+.action,
+.danger,
+.success,
+  color:white
+
+.action
+  background-color:$action
+.danger
+  background-color:$danger
+.success
+  background-color:$success
+.warning
+  background-color:$warning
+
+.muted
+  background-color:$gray06

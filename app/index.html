@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Stew's Starter Pack</title>
   <!-- styles -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/master.css" media="screen" title="no title" charset="utf-8">
   <!-- /styles -->
   <!-- Scripts -->
@@ -50,10 +49,10 @@
       <article>
         <div class="grid test">
           <div class="grid-cell">
-              <h3>Grid Cell (auto)</h3>
+            <h3>Grid Cell (auto)</h3>
           </div>
           <div class="grid-cell">
-              <h3>Grid Cell (auto)</h3>
+            <h3>Grid Cell (auto)</h3>
           </div>
         </div>
         <div class="grid test">
@@ -117,212 +116,138 @@
       </article>
     </section>
     <!-- /Grid -->
-    <!-- Typography -->
-    <section class="block half">
+    <!-- Block Full -->
+    <section class="block full">
       <header>
         <h1>Typography</h1>
+        <small>Typographic Styles. Sizes & Units come from <a href="http://www.gridlover.net/app/">Gridlover.net</a></small>
       </header>
       <article>
-        <div class="cell-one">
-          <header>
-            <h3>Basic Type, Lists, & Quotes</h3>
-          </header>
-          <p>
-            Basic paragraph type. Mumblecore chia pug, meggings Williamsburg <a href="#">Links</a> plaid church-key literally. Tilde migas salvia vinyl Banksy, distillery lo-fi tousled banh mi mlkshk. Marfa mustache synth <em>Emphisis</em> single-origin coffee fixie swag, <strong>Strong</strong> organic actually forage PBR. DIY PBR forage selfies.
-          </p>
-          <ul>
-            <li><strong>Unordered List</strong></li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-          </ul>
-          <ol>
-            <li><strong>Ordered List</strong></li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-          </ol>
-          <ul class="no-style">
-            <li><strong>Unstyled List</strong></li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-          </ul>
-          <blockquote>
-            <p>A Block Quote is nice.</p>
-          </blockquote>
+        <div class="grid">
+          <div class="grid-cell">
+            <h3>Font Properties</h3>
+            <hr>
+            <ul class="no-style">
+              <li><pre>font-family: "Helvetica Neue"</pre></li>
+              <li><pre>font-size:1rem (16px)</pre></li>
+              <li><pre>font-weight:300 (light)</pre></li>
+              <li><pre>line-height:1.5rem (24px)</pre></li>
+              <li><pre>letter-spacing:0.1rem</pre></li>
+            </ul>
+          </div>
+          <div class="grid-cell">
+            <h3>Basic Text</h3>
+            <hr>
+            <p>
+              Pitchfork Odd Future literally, pop-up before they sold out ethical hoodie irony Carles blog keffiyeh gentrify. Shabby chic semiotics four loko street art, ethical Brooklyn Godard Pitchfork kitsch forage selfies vegan artisan butcher flannel.
+            </p>
+          </div>
+          <div class="grid-cell">
+            <h3>Links & Styled Text</h3>
+            <hr>
+            <a href="#">An href link</a>
+            <br>
+            <strong>Strong Text</strong>
+            <br>
+            <em>Emphisised Text</em>
+            <br>
+            <small>Small Text</small>
+          </div>
         </div>
-        <div class="cell-two">
-          <header>
-            <h3>Heading Tags</h3>
-          </header>
-          <h1>Heading One (Headline)</h1>
-          <h2>Heading Two (Header)</h2>
-          <h3>Heading Three (Title)</h3>
-          <h4>Heading Four (Subtitle)</h4>
+        <div class="grid">
+          <div class="grid-half">
+            <h3>Headings</h3>
+            <hr>
+            <h1>h1 Headline <small class="text-muted">(2.75rem | 44px)</small></h1>
+            <h2>h2 <small class="text-muted">(1.9275rem | 31px)</small></h2>
+            <h3>h3 Title - <small class="text-muted">(1.25rem | 22px)</small></h3>
+            <h4>h4 SubTitle - <small class="text-muted">(1rem | 16px)</small></h4>
+          </div>
+          <div class="grid-cell">
+            <h3>Lists</h3>
+            <hr>
+            <div class="grid">
+              <div class="grid-cell">
+                <ol>
+                  <li><strong>Ordered</strong></li>
+                  <li>list Item</li>
+                  <li>list Item</li>
+                  <li>list Item</li>
+                </ol>
+              </div>
+              <div class="grid-cell">
+                <ul>
+                  <li><strong>Unordered</strong></li>
+                  <li>list Item</li>
+                  <li>list Item</li>
+                  <li>list Item</li>
+                </ul>
+              </div>
+              <div class="grid-cell">
+                <ul class="no-style">
+                  <li><strong>No Style</strong></li>
+                  <li>list Item</li>
+                  <li>list Item</li>
+                  <li>list Item</li>
+                </ul>
+              </div>
+            </div>
+            <h3>Block Quotes</h3>
+            <hr>
+            <blockquote>
+              "This is only a quote"
+            </blockquote>
+          </div>
         </div>
-      </article>
-    </section>
-    <!-- /Typography -->
-    <!-- Full Width Block -->
-    <section class="full">
-      <header>
-        <h1>A Little Angular Controler</h1>
-        <input type="text" ng-model="search" placeholder="Search People">
-      </header>
-      <article>
-        <h3>A List of People</h3>
-        <a href="#" class="btn"><i class="material-icons">book</i> Default Button</a>
-        <a href="#" class="btn action"><i class="material-icons">verified_user</i> Action Button</a>
-        <a href="#" class="btn danger"><i class="material-icons">cancel</i> Danger Button</a>
-        <a href="#" class="btn success"><i class="material-icons">check_circle</i> Success Button</a>
-        <a href="#" class="btn warning"><i class="material-icons">warning</i> Warning Button</a>
-
-        <button class="btn icon danger"><i class="material-icons">call_end</i></button>
-
-        <ul>
-          <li ng-repeat="item in list | filter:search" >
-            {{item.name}} - <em>{{item.age}}</em>
-          </li>
-        </ul>
-        <form ng-submit="addPerson()">
-          <input type="text" placeholder="Name" ng-model="name">
-          <input type="Number" placeholder="Age" ng-model="age">
-          <input type="submit" value="Submit">
-        </form>
-      </article>
-      <footer>
-        <small>This is the footer block.</small>
-      </footer>
-    </section>
-    <!-- /Full Width Block -->
-    <!-- Half Block -->
-    <section class="half">
-      <header>
-        <h1>A Block with Halfs</h1>
-      </header>
-      <article class="">
-        <div class="cell-one">
-          <h3>The Right Half</h3>
-          <p>
-            This is the right half of the block. This is where your mother lives.
-          </p>
-        </div>
-        <div class="cell-two">
-          <h3>The Left Half</h3>
-          <p>
-            This is the left half of the block.
-          </p>
-        </div>
-      </article>
-      <footer>
-        <small>This is the block footer.</small>
-      </footer>
-    </section>
-    <!-- /Half Block -->
-    <!-- Full Width Block -->
-    <section class="full-center">
-      <header>
-        <h1>A Full Width Block That Is Centered</h1>
-      </header>
-      <article>
-        <h3>This Block Is Fat & Centered</h3>
-        <p>
-          This block is really fat. It takes up 100% of it's container. The text is centered.
-        </p>
-      </article>
-      <footer>
-        <small>This is the footer block.</small>
-      </footer>
-    </section>
-    <!-- /Full Width Block -->
-    <!-- Trips -->
-    <section class="trips">
-      <header>
-        <h1>Trips Block</h1>
-      </header>
-      <article>
-        <div class="cell-one">
-          <h3>Trips One</h3>
-          <p>This is the first in three blocks. Trips comes from a football formation. Three recivers to the left or right.</p>
-        </div>
-        <div class="cell-two">
-          <h3>Trips Two</h3>
-          <p>This is the first in three blocks. Trips comes from a football formation. Three recivers to the left or right.</p>
-        </div>
-        <div class="cell-three">
-          <h3>Trips Three</h3>
-          <p>This is the first in three blocks. Trips comes from a football formation. Three recivers to the left or right.</p>
+        <div class="grid">
+          <div class="grid-cell">
+            <h3>Text States</h3>
+            <hr>
+            <ul class="no-style">
+              <li class="text-action">Action</li>
+              <li class="text-danger">Danger</li>
+              <li class="text-success">Success</li>
+              <li class="text-warning">Warning</li>
+              <li class="text-muted">Muted</li>
+            </ul>
+          </div>
+          <div class="grid-cell">
+            <h3>Text On States</h3>
+            <hr>
+            <ul class="no-style">
+              <li class="action" style="padding:5px 0; text-indent:5px; border-radius:4px; margin-top:12px">Text on Action</li>
+              <li class="danger" style="padding:5px 0; text-indent:5px; border-radius:4px; margin-top:12px">Text on Danger</li>
+              <li class="success" style="padding:5px 0; text-indent:5px; border-radius:4px; margin-top:12px">Text on Success</li>
+              <li class="warning" style="padding:5px 0; text-indent:5px; border-radius:4px; margin-top:12px">Text on Warning</li>
+              <li class="muted" style="padding:5px 0; text-indent:5px; border-radius:4px; margin-top:12px">Text on Gray BG</li>
+            </ul>
+          </div>
         </div>
       </article>
       <footer>
-        <small>This is the footer</small>
+        <small>Full Block Footer</small>
       </footer>
     </section>
-    <!-- /Trips -->
-    <!-- Quads -->
-    <section class="quads">
+    <!-- /Block Full -->
+    <!-- Block Half -->
+    <section class="block half">
       <header>
-        <h1>Quad Block</h1>
+        <h1>Half Block</h1>
+        <small>Full Block Header</small>
       </header>
       <article>
-        <div class="cell-one">
-          <h3>Quad One</h3>
-          <p>This is a quad block. For when you need four things across.</p>
+        <div class="grid-cell">
+          <h3>Left</h3>
         </div>
-        <div class="cell-two">
-          <h3>Quad Two</h3>
-          <p>This is a quad block. For when you need four things across.</p>
-        </div>
-        <div class="cell-three">
-          <h3>Quad Three</h3>
-          <p>This is a quad block. For when you need four things across.</p>
-        </div>
-        <div class="cell-four">
-          <h3>Quad Four</h3>
-          <p>This is a quad block. For when you need four things across.</p>
-        </div>
-      </article>
-    </section>
-    <!-- /Quads -->
-    <!-- Three Fourths Left  -->
-    <section class="threefourths-left">
-      <header>
-        <h1>Three Fourths Left</h1>
-      </header>
-      <article>
-        <div class="cell-one">
-          <h3>This is the main text area</h3>
-          <p>This is a three-fourths block. This is the main message area.</p>
-        </div>
-        <div class="cell-two">
-          <img src="https://placeimg.com/640/480/any">
+        <div class="grid-cell">
+          <h3>Right</h3>
         </div>
       </article>
       <footer>
-        <small>This is the block's footer</small>
+        <small>Full Block Footer</small>
       </footer>
     </section>
-    <!-- /Three Fourths Left  -->
-    <!-- Three Fourths Right  -->
-    <section class="threefourths-right">
-      <header>
-        <h1>Three Fourths Right</h1>
-      </header>
-      <article>
-        <div class="cell-one">
-          <img src="https://placeimg.com/640/480/any">
-        </div>
-        <div class="cell-two">
-          <h3>This is the main text area</h3>
-          <p>This is a three-fourths block. This is the main message area.</p>
-        </div>
-      </article>
-      <footer>
-        <small>This is the block's footer</small>
-      </footer>
-    </section>
-    <!-- /Three Fourths Right  -->
+    <!-- /Block Half -->
   </main>
   <footer role="footer">
     <p>This is the footer</p>
