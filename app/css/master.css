@@ -122,7 +122,8 @@ button,
 button.btn,
 input[type="submit"] {
   display: inline-block;
-  padding: 0.875rem 1rem;
+  margin-bottom: 1.5rem;
+  padding: 0.625rem 1rem;
   color: #474747;
   font-size: 0.875rem;
   font-weight: 600;
@@ -137,7 +138,8 @@ input[type="submit"] {
   border-color: #d4d4d4;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  background: #f0f0f0; }
+  background: #f0f0f0;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.19), 0 1px 1px white; }
   .btn:hover,
   a.btn:hover,
   button:hover,
@@ -166,7 +168,8 @@ button.action,
 button.btn.action,
 input.action[type="submit"] {
   display: inline-block;
-  padding: 0.875rem 1rem;
+  margin-bottom: 1.5rem;
+  padding: 0.625rem 1rem;
   color: white;
   font-size: 0.875rem;
   font-weight: 600;
@@ -181,7 +184,8 @@ input.action[type="submit"] {
   border-color: #0877c9;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  background: #0f93f5; }
+  background: #0f93f5;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.19), 0 1px 1px rgba(0, 0, 0, 0.24); }
   .btn.action:hover,
   a.btn.action:hover,
   button.action:hover,
@@ -210,7 +214,8 @@ button.danger,
 button.btn.danger,
 input.danger[type="submit"] {
   display: inline-block;
-  padding: 0.875rem 1rem;
+  margin-bottom: 1.5rem;
+  padding: 0.625rem 1rem;
   color: white;
   font-size: 0.875rem;
   font-weight: 600;
@@ -225,7 +230,8 @@ input.danger[type="submit"] {
   border-color: #ea1c0d;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  background: #f44336; }
+  background: #f44336;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
   .btn.danger:hover,
   a.btn.danger:hover,
   button.danger:hover,
@@ -254,7 +260,8 @@ button.success,
 button.btn.success,
 input.success[type="submit"] {
   display: inline-block;
-  padding: 0.875rem 1rem;
+  margin-bottom: 1.5rem;
+  padding: 0.625rem 1rem;
   color: white;
   font-size: 0.875rem;
   font-weight: 600;
@@ -269,7 +276,8 @@ input.success[type="submit"] {
   border-color: #378b3b;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  background: #46af4a; }
+  background: #46af4a;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
   .btn.success:hover,
   a.btn.success:hover,
   button.success:hover,
@@ -298,7 +306,8 @@ button.warning,
 button.btn.warning,
 input.warning[type="submit"] {
   display: inline-block;
-  padding: 0.875rem 1rem;
+  margin-bottom: 1.5rem;
+  padding: 0.625rem 1rem;
   color: white;
   font-size: 0.875rem;
   font-weight: 600;
@@ -313,7 +322,8 @@ input.warning[type="submit"] {
   border-color: #cc7a00;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  background: #ff9800; }
+  background: #ff9800;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
   .btn.warning:hover,
   a.btn.warning:hover,
   button.warning:hover,
