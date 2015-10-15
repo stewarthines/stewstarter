@@ -8,7 +8,9 @@ header[role="banner"]
     box-shadow: $z1-shadow
 
     nav
-        @extend %blockContainer
+      @extend %grid
+      max-width:95%
+      align-items: center
 
     .brand,
     .barnd h1,
@@ -20,40 +22,50 @@ header[role="banner"]
 
     .brand,
     .brand h1
+        @extend %heading
+        @extend %gridHalf
+        align-self:center
+        order:1
         margin:0
-        font-size:$spacingBase
+        padding:0
 
-    ul
-      position: relative
+
+    .menu
+      @extend %gridHalf
+      order:2
       text-align:right
+
+    .menu ul
+      li
+        display:inline
       @media screen and (max-width:$bpSM)
-        transform:translateY(-1000px)
-        display:none
-        visibility: hidden
+        position: absolute
+        top:-1000px
+        position:absolute
+        z-index: 800
+        left:0
+        right:0
+        display:block
+        width:100%
+        text-align:center
+        transition: top 300ms ease-in-out
+        li
+          display:block
+          background:$gray06
+          width:100%
+          padding:$spacingSM 0
+          border-bottom:1px solid $borderColor
+          box-shadow:$z1-shadow
         .divder
           display:none
         &.show
-        position: absolute
-        top:77px
-        left:0
-        right:0
-        transform:translateY(0)
-        background:$gray06
-        display:block
-        flex: 0 0 100%
-        visibility: visible
-        width:100%
-        box-shadow: $z1-shadow
-        li
-          display:block
-          width:100%
-          padding:$spacingXS 0
-          text-align:center
-          border-bottom:1px solid $borderColor
+          top:5rem
+          z-index: 800
+          transition: top 300ms ease-in-out
 
 
-      li
-          display:inline-block
+
+
 
     .mobile-menu
       display:none

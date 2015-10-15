@@ -27,16 +27,18 @@
       <div class="brand">
         <h1><a href="/">Stew's Starter Pack</a></h1>
       </div>
-      <div class="mobile-menu" ng-click="showMobileMenu=!showMobileMenu">
-        <i class="material-icons">menu</i>
+      <div class="menu" ng-click="showMobileMenu=!showMobileMenu">
+        <div class="mobile-menu">
+          <i class="material-icons">menu</i>
+        </div>
+        <ul ng-class="{'show' : showMobileMenu }">
+          <li><a href="#">Product</a></li>
+          <li class="divder"> | </li>
+          <li><a href="#">About</a></li>
+          <li class="divder"> | </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </div>
-      <ul ng-class="{'show' : showMobileMenu }">
-        <li><a href="#">Product</a></li>
-        <li class="divder"> | </li>
-        <li><a href="#">About</a></li>
-        <li class="divder"> | </li>
-        <li><a href="#">Contact</a></li>
-      </ul>
     </nav>
   </header>
   <!-- /Global Header -->
