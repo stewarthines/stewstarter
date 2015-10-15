@@ -349,7 +349,99 @@ input.warning[type="submit"] {
 .btn .material-icons {
   vertical-align: middle; }
 
-section {
+.grid {
+  display: flex;
+  felx-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 64rem;
+  margin: 0 auto; }
+  .align-top.grid {
+    align-items: flex-start; }
+  .align-bottom.grid {
+    align-items: flex-end; }
+  .align-center.grid {
+    align-items: center; }
+  @media screen and (max-width: 767px) {
+    .grid {
+      width: 98%; } }
+
+.grid-cell,
+.grid-fourth,
+.grid-third,
+.grid-half,
+.grid-two-thirds,
+.grid-three-fourths,
+.grid-full {
+  flex: 1;
+  margin: 0 1.4%; }
+  .grid-cell:first-child,
+  .grid-fourth:first-child,
+  .grid-third:first-child,
+  .grid-half:first-child,
+  .grid-two-thirds:first-child,
+  .grid-three-fourths:first-child,
+  .grid-full:first-child {
+    margin-left: 0; }
+  .grid-cell:last-child,
+  .grid-fourth:last-child,
+  .grid-third:last-child,
+  .grid-half:last-child,
+  .grid-two-thirds:last-child,
+  .grid-three-fourths:last-child,
+  .grid-full:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 767px) {
+    .grid-cell,
+    .grid-fourth,
+    .grid-third,
+    .grid-half,
+    .grid-two-thirds,
+    .grid-three-fourths,
+    .grid-full {
+      flex: 0 0 100%;
+      margin: 0;
+      margin-bottom: 1.4%; } }
+
+.grid.test {
+  background: #f8f8f8; }
+  .grid.test h3 {
+    padding: 0.875rem 0;
+    text-indent: 0.875rem;
+    background: #f0f0f0;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    margin-bottom: 1.5rem; }
+
+.grid-fourth {
+  flex: 0 0 22.9%; }
+
+.grid-third {
+  flex: 0 0 31.45%; }
+
+.grid-half {
+  flex: 0 0 48.6%; }
+
+.grid-two-thirds {
+  flex: 0 0 65.6666%; }
+
+.grid-three-fourths {
+  flex: 0 0 74.3%; }
+
+.grid-full {
+  flex: 0 0 100%; }
+
+@media screen and (max-width: 767px) {
+  .gird-cell,
+  .grid-fourth,
+  .grid-third,
+  .grid-half,
+  .grid-two-thirds,
+  .grid-three-fourths,
+  .grid-full {
+    flex: 0 0 100%; } }
+
+.block {
   position: relative;
   z-index: 100;
   display: flex;
@@ -360,9 +452,9 @@ section {
   border-bottom: 1px solid #d4d4d4;
   background: white; }
 
-section article,
-section header,
-section footer, section.layout, header[role="banner"] nav {
+.block article,
+.block header,
+.block footer, section.layout, header[role="banner"] nav {
   flex: 0 0 90%;
   flex-direction: row;
   flex-wrap: wrap;
@@ -372,88 +464,88 @@ section footer, section.layout, header[role="banner"] nav {
   max-width: 64rem;
   margin: 0 auto; }
   @media screen and (max-width: 767px) {
-    section article,
-    section header,
-    section footer, section.layout, header[role="banner"] nav {
+    .block article,
+    .block header,
+    .block footer, section.layout, header[role="banner"] nav {
       flex-wrap: wrap;
       flex: 0 0 90%;
       max-width: 64rem; } }
-  header[role="banner"] section article .brand,
-  section header[role="banner"] .brand,
-  header[role="banner"] section footer .brand,
-  header[role="banner"] section.layout .brand,
+  header[role="banner"] .block article .brand,
+  .block header[role="banner"] .brand,
+  header[role="banner"] .block footer .brand,
+  section.layout header[role="banner"] .brand, header[role="banner"] section.layout .brand,
   header[role="banner"] nav .brand,
-  header[role="banner"] .barnd section article h1,
-  section header[role="banner"] .barnd h1,
-  header[role="banner"] .barnd section footer h1,
-  header[role="banner"] .barnd section.layout h1,
+  header[role="banner"] .barnd .block article h1,
+  .block header[role="banner"] .barnd h1,
+  header[role="banner"] .barnd .block footer h1,
+  section.layout header[role="banner"] .barnd h1, header[role="banner"] .barnd section.layout h1,
   header[role="banner"] nav .barnd h1,
   header[role="banner"] .barnd nav h1,
-  header[role="banner"] section article ul, section header[role="banner"] ul,
-  header[role="banner"] section footer ul, header[role="banner"] section.layout ul, header[role="banner"] nav ul {
+  header[role="banner"] .block article ul, .block header[role="banner"] ul,
+  header[role="banner"] .block footer ul, section.layout header[role="banner"] ul, header[role="banner"] section.layout ul, header[role="banner"] nav ul {
     flex: 1; }
 
-section article {
+.block article {
   padding: 3rem 0; }
 
-section.full article {
+.block.full article {
   display: block; }
 
-section.full-center header,
-section.full-center article,
-section.full-center footer {
+.block.full-center header,
+.block.full-center article,
+.block.full-center footer {
   display: block;
   text-align: center; }
 
-section.half .cell-one,
-section.half .cell-two {
+.block.half .cell-one,
+.block.half .cell-two {
   flex: 0 0 47.5%; }
 
-section.half .cell-one {
+.block.half .cell-one {
   margin-right: 2.5%; }
 
 @media screen and (max-width: 767px) {
-  section.half .left,
-  section.half .right {
+  .block.half .left,
+  .block.half .right {
     flex: 0 0 100%;
     margin-left: 0; }
-  section.half .left {
+  .block.half .left {
     margin-bottom: 1.5rem; } }
 
-section.trips .cell-one,
-section.trips .cell-two,
-section.trips .cell-three {
+.block.trips .cell-one,
+.block.trips .cell-two,
+.block.trips .cell-three {
   flex: 1;
   margin-right: 2.5%; }
 
-section.trips .cell-three {
+.block.trips .cell-three {
   margin-right: 0; }
 
-section.quads .cell-one,
-section.quads .cell-two,
-section.quads .cell-three,
-section.quads .cell-four {
+.block.quads .cell-one,
+.block.quads .cell-two,
+.block.quads .cell-three,
+.block.quads .cell-four {
   flex: 1;
   margin-right: 2.5%; }
 
-section.quads .cell-four {
+.block.quads .cell-four {
   margin-right: 0; }
 
-section.threefourths-left .cell-one {
+.block.threefourths-left .cell-one {
   flex: 0 0 66.666%;
   order: 1;
   margin-right: 2.5%; }
 
-section.threefourths-left .cell-two {
+.block.threefourths-left .cell-two {
   flex: 0 0 30.8333%;
   order: 2; }
 
-section.threefourths-right .cell-one {
+.block.threefourths-right .cell-one {
   flex: 0 0 30.8333%;
   order: 1;
   margin-right: 2.5%; }
 
-section.threefourths-right .cell-two {
+.block.threefourths-right .cell-two {
   flex: 0 0 66.666%;
   order: 2; }
 
@@ -515,9 +607,10 @@ header[role="banner"] {
     margin: 0;
     font-size: 1.5rem; }
   header[role="banner"] ul {
-    position: relative; }
+    position: relative;
+    text-align: right; }
     @media screen and (max-width: 767px) {
-      header[role="banner"] ul text-align:right {
+      header[role="banner"] ul {
         transform: translateY(-1000px);
         display: none;
         visibility: hidden;
@@ -532,9 +625,9 @@ header[role="banner"] {
         visibility: visible;
         width: 100%;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
-        header[role="banner"] ul text-align:right .divder {
+        header[role="banner"] ul .divder {
           display: none; }
-        header[role="banner"] ul text-align:right li {
+        header[role="banner"] ul li {
           display: block;
           width: 100%;
           padding: 0.875rem 0;

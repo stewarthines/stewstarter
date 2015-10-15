@@ -1,0 +1,121 @@
+// Flex Grid
+//==========
+// Stewart Hines | October 2015
+// Based off of Solved by Flexbox
+// Right Now, Grids should be in a block-full
+
+$gridGutter:1.4%
+
+//- - A. Grid Container - - //
+%grid
+  display:flex
+  felx-direction:row
+  flex-wrap:wrap
+  width:100%
+  max-width:$containerWidth
+  margin:0 auto
+
+  &.align-top
+    align-items: flex-start
+  &.align-bottom
+    align-items:flex-end
+  &.align-center
+    align-items:center
+
+  @media screen and (max-width:$bpSM)
+    width:98%
+
+// - - B. Grid Cell - - //
+%gridCell
+  flex:1
+  margin:0 $gridGutter
+
+  &:first-child
+    margin-left:0
+  &:last-child
+    margin-right:0
+
+  @media screen and (max-width:$bpSM)
+    flex: 0 0 100%
+    margin: 0
+    margin-bottom:$gridGutter
+
+// - - C. Grid Test - - //
+%gridTest
+  // This is for testing
+  background:lighten($gray06, 3%)
+
+  h3
+    padding: $spacingXS 0
+    text-indent: $spacingXS
+    background:$gray06
+    border:1px solid $borderColor
+    border-radius:$borderRadius
+    margin-bottom:$spacingBase
+
+// = = = = 1. Basic Grid Container = = = = //
+.grid,
+%grid
+  @extend %grid
+
+.grid.test
+  @extend %gridTest
+
+// = = = = 2. Grid Cells = = = = //
+
+// - - 2.A Auto Flex Cell - - //
+.grid-cell,
+%gridCell
+  @extend %gridCell
+
+// - - 2.B Cell Fourth - - //
+.grid-fourth,
+%gridFourth
+  @extend %gridCell
+  flex: 0 0 22.9%
+
+// - - 2.C Cell Third - - //
+.grid-third,
+%gridThird
+  @extend %gridCell
+  flex: 0 0 31.45%
+
+// - - 2.D Cell Half - - //
+.grid-half,
+%gridHalf
+  @extend %gridCell
+  flex: 0 0 48.6%
+
+// - - 2.E Cell Two Thirds - - //
+.grid-two-thirds,
+%gridTwoThirds
+  @extend %gridCell
+  flex: 0 0 65.6666%
+
+// - - 2.F Cell Three Fourths - - //
+.grid-three-fourths,
+%gridThreeFourths
+  @extend %gridCell
+  flex:0 0 74.3%
+
+// - - 2.G Cell Full - - //
+.grid-full,
+%gridFull
+  @extend %gridCell
+  flex: 0 0 100%
+
+// = = = = 3. Media Queries = = = = //
+
+// - - 3.A Small Devices - - //
+@media screen and (max-width:$bpSM)
+
+  .gird-cell,
+  .grid-fourth,
+  .grid-third,
+  .grid-half,
+  .grid-two-thirds,
+  .grid-three-fourths,
+  .grid-full
+    flex:0 0 100%
+
+// - - 3.B Medium Devices - - //
