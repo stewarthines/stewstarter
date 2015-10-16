@@ -77,6 +77,19 @@ strong {
 small {
   font-size: 0.875rem; }
 
+code,
+pre {
+  font-size: 14px; }
+
+blockquote {
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin: 1.5rem auto;
+  font-style: italic;
+  font-weight: 300;
+  color: #7f7f7f; }
+
 hr {
   display: block;
   border: none;
