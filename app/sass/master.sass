@@ -22,3 +22,35 @@
 // = = = = 4. Global Layouts = = = =//
 @import layout-header
 @import layout-footer
+
+%clickable
+    cursor: pointer
+    font-weight: 500
+
+
+.tab-nav
+    display:flex
+    width:100%
+    background:$gray06
+
+
+.tab-link
+    @extend %clickable
+    flex: 1
+    padding:5px $spacingBase
+    color:$action
+    text-align:center
+    border-bottom:3px solid $gray17
+
+    &.active
+        font-weight:bold
+        color:darken($action, 20%)
+        border-bottom: 3px solid $action
+
+.tab
+    display:none
+    visibility: hidden
+    padding:$spacingBase 0
+    &.active
+        display:block
+        visibility: visible

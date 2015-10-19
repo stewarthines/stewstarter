@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="webPage">
+<html ng-app="app">
 
 <head>
   <meta charset="utf-8">
@@ -12,6 +12,7 @@
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
   <script src="scripts/webpage.js"></script>
+  <script src="scripts/tabs.js"></script>
   <!-- /scripts -->
   <!-- Favicons -->
   <link rel="icon" type="img" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -43,6 +44,16 @@
   </header>
   <!-- /Global Header -->
   <main role="main">
+    <section class="block full" ng-app="app">
+        <header>
+            <h1>Tabs</h1>
+        </header>
+        <article>
+            <tab>
+                <h1>I am tab!</h1>
+            </tab>
+        </article>
+    </section>
     <!-- Grid -->
     <section class="block full">
       <header>

@@ -743,3 +743,31 @@ footer[role="footer"] {
   font-size: 0.875rem;
   text-align: center;
   background: #474747; }
+
+.tab-link {
+  cursor: pointer;
+  font-weight: 500; }
+
+.tab-nav {
+  display: flex;
+  width: 100%;
+  background: #f0f0f0; }
+
+.tab-link {
+  flex: 1;
+  padding: 5px 1.5rem;
+  color: #0f93f5;
+  text-align: center;
+  border-bottom: 3px solid #d4d4d4; }
+  .tab-link.active {
+    font-weight: bold;
+    color: #065a98;
+    border-bottom: 3px solid #0f93f5; }
+
+.tab {
+  display: none;
+  visibility: hidden;
+  padding: 1.5rem 0; }
+  .tab.active {
+    display: block;
+    visibility: visible; }
