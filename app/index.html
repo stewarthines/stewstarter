@@ -23,7 +23,7 @@
 
 <body ng-controller="webPageController">
   <!-- Global header -->
-  <header role="banner">
+  <header class="fixed" role="banner">
     <nav role="navigation">
       <div class="brand">
         <h1><a href="/">Stew's Starter Pack</a></h1>
@@ -43,17 +43,7 @@
     </nav>
   </header>
   <!-- /Global Header -->
-  <main role="main">
-    <section class="block full" ng-app="app">
-        <header>
-            <h1>Tabs</h1>
-        </header>
-        <article>
-            <tab>
-                <h1>I am tab!</h1>
-            </tab>
-        </article>
-    </section>
+  <main class="fixed-header" role="main">
     <!-- Grid -->
     <section class="block full">
       <header>
